@@ -4,6 +4,7 @@
     --secondary-color:rgba(237, 246, 239, 0.984);
     --transition: all 0.3s;
     --border-radious:0.6rem;
+    --padding:0.5rem;
     --box-shadow:0.1rem 0.2rem 0.8rem rgba(205,-202,202,0.5);
 }
 
@@ -30,7 +31,22 @@ img{
     justify-content: space-around;
     align-items: center;
 }
+.btn{
+    border: none;
+    padding:var(--padding);
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: var(--transition);
+}
+.btn:hover{
+    background-color:blueviolet;
+}
 /* common style start here */
+
+/*menu Icon*/
+#menu-icon{
+    display: none;
+}
 
 /* Navbar start here */
 
@@ -98,7 +114,15 @@ nav{
     flex-direction:column;
     gap: 1rem;
     padding: 1rem, 0;
-
+}
+#menu-icon{
+    display: block;
+    text-align: center;
+    margin: 1rem 0;
+    cursor: pointer;
+}
+.hidden{
+    display: none;
 
 }
 
@@ -109,3 +133,23 @@ nav{
 @media (max-width:600) {
     
 }
+/* Navbar Ends here */
+
+/*Footer Start Here*/
+.footer{
+    background-color: var(---primary-color);
+    padding: 1rem;
+    color: white;
+    font-size:1.5rem;
+}
+
+.btn-subscribe{
+    margin-left: -5px;
+    font-size: 0.8rem;
+}
+.footer__input{
+    border: none;
+    padding: var(--padding);
+    width:20rem;
+}
+/*Footer Ends Here*/
