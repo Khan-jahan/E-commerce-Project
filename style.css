@@ -46,7 +46,16 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
+}
 
+.card{
+    box-shadow: var(--secondary-color);
+    border-radius: var(--border-radious);
+    transition: var(--transition);
+    padding: var(--padding);
+}
+.card:hover{
+    box-shadow: 0.1rem 0.2rem 0.8rem rgba(205,202,202,1);
 }
 /* common style start here */
 
@@ -226,6 +235,57 @@ main{
     border: 1px solid;
 }
 
+/* Products start here */
+.products{
+    display:grid;
+    grid-template-columns: repeat(3,minmax(0,1fr));
+}
+
+.product{
+    position: relative;
+}
+
+.badge{
+ position:absolute;
+ top: 0.5em;
+ left: 0rem;
+ color: white;
+ background-color: green;
+ padding: 4px 8px;
+ border-radius: var(--border-radious);
+ text-align: center;
+ z-index: 10;
+}
+
+.product__immage{width: 100%;
+    height: 15rem;
+    filter: saturate(0);
+    transition: var(--transition);
+
+}
+
+.product__immage:hover{
+    filter: saturate(1);
+}
+
+
+.product__body{
+    padding: var(--padding);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.show-detail{
+    color: green;
+    font-weight: 800;
+}
+
+.product__button:hover{
+    background-color:var(---primary-color);
+}
+
+/* Products End here */
 
 /*Footer Start Here*/
 .footer{
