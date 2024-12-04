@@ -78,6 +78,13 @@ img{
     background-color: black;
 }
 
+.text-center{
+    text-align: center;
+}
+
+.section-title{
+    font-size: 2rem;
+}
 /* common style start here */
 
 /*menu Icon*/
@@ -392,13 +399,101 @@ main{
 .cart .card{
     margin-bottom: 1rem;
 }
-
-
-
-
-
-
 /* card design End here */
+
+/* Register & Login Start Here */
+.register, .login, .contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    min-height: 60vh;
+}
+
+.register .card, .login .card, .contact .card {
+    width: 45rem;
+} 
+
+.form{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-control label{
+    flex: 0.1;
+    text-align: left;
+
+}
+.form-control input, textarea{
+    flex: 0.9;
+    padding: var(--padding);
+    border: 1px solid black;
+    resize: none;
+}
+.form-control textarea{
+    resize: none;
+    height: 12vh;
+}
+
+.from-btn-feild{
+    border-radius: var(--border-radious);
+}
+
+.contact-btn{
+    width: 30%;
+}
+/* Register & Longin end Here */
+
+
+/* Profile Start Here */
+.profile{
+    flex-direction: column;
+    gap: 2rem;
+} 
+.profile .card{
+    padding: var(--padding);
+    width: 30rem;
+    flex-direction: column;
+    gap:0.5rem;
+}
+
+.profile__img{
+    width: 20vh;
+    border-radius: 50%;
+    border: 1px solid;
+}
+
+.profile__btn button{
+    background-color: transparent;
+}
+
+/* Profile End Here */
+
+/* Contact Start Here */
+.contact{
+    min-height: 52vh;
+}
+
+.contact__container{
+    margin: 5rem;
+    gap: 2rem;
+   
+}
+.contact__address{
+    flex: 1;
+    gap: 2rem;
+    flex-direction: column;
+}
+.contact__map{
+    width: 50%;
+}
+.contact__map{
+    width:100%;
+}
+/* Contact End Here */
 
 
 
@@ -449,9 +544,19 @@ main{
     .cart__item .cart__payment{
         width: 90%;
     }
-    
 
-
+    .register .card, .login .card, .contact .card {
+        width: 90%;
+    } 
+    .form, .form-control{
+        width: 100%;
+    }
+    .form-control input, textarea{
+        width: 80%;
+    }
+    .contact__address{
+       width: 100%;
+    }
     
     }
 
